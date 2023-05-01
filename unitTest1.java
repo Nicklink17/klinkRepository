@@ -6,17 +6,17 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * The test class TestClockTimeTest.
+ * The test class unitTest1.
  *
  * @author  (your name)
  * @version (a version number or a date)
  */
-public class TestClockTimeTest
+public class unitTest1
 {
     /**
-     * Default constructor for test class TestClockTimeTest
+     * Default constructor for test class unitTest1
      */
-    public TestClockTimeTest()
+    public unitTest1()
     {
     }
 
@@ -39,4 +39,12 @@ public class TestClockTimeTest
     public void tearDown()
     {
     }
+
+    @Test
+    public void test1()
+    {
+        ClockTime clockTim1 = new ClockTime();
+        assertEquals("00:00:00", clockTim1.toString());
+    }
 }
+
